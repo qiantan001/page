@@ -12,19 +12,27 @@
   
   <button >按钮1</button>
   <button >按钮2</button>
+  <button >按钮3</button>
+  <button >按钮4</button>
+  <button >按钮5</button>
+  <button >按钮6</button>
 
   <script>
-		
-	function func()
+	
+	
+	function func(e)
 	{
 		
-		alert("点击了");
+		alert(e.target.innerHTML);
 	}
-
 	var buto = document.getElementsByTagName("button");
 
-	buto[0].onclick = func;
-  
+	var i;
+
+	for(i=0;i<=5;i++)
+	{
+	buto[i].onclick = func;
+	}
   </script>
  </body>
 </html>
