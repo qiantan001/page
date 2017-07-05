@@ -10,14 +10,20 @@
  </head>
  <body>
   
-  <button onclick="func()">按钮1</button>
+  <button >按钮1</button>
+  <button >按钮2</button>
 
   <script>
 		
-	function func(){
+	function func()
+	{
 		
-		alert("点击了")
+		alert("点击了");
 	}
+
+	var buto = document.getElementsByTagName("button");
+
+	buto[0].onclick = func;
   
   </script>
  </body>
